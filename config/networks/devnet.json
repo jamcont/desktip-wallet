@@ -1,0 +1,66 @@
+{
+  "id": "bancoin.devnet",
+  "name": "Bancoin Devnet",
+  "title": "Bancoin Devnet",
+  "server": "http://199.192.30.215:4003",
+  "description": "The Bancoin Devnet is only used by Bancoiners.",
+  "imagePath": "networks/ark.devnet.svg",
+  "apiVersion": 2,
+  "slip44": "1",
+  "market": {
+    "enabled": false,
+    "ticker": null
+  },
+  "feeStatistics": [
+    {
+      "type": 0,
+      "fees": {
+        "avgFee": 10000000,
+        "maxFee": 10000000,
+        "minFee": 10000000
+      }
+    },
+    {
+      "type": 1,
+      "fees": {
+        "avgFee": 500000000,
+        "maxFee": 500000000,
+        "minFee": 500000000
+      }
+    },
+    {
+      "type": 2,
+      "fees": {
+        "avgFee": 2500000000,
+        "maxFee": 2500000000,
+        "minFee": 2500000000
+      }
+    },
+    {
+      "type": 3,
+      "fees": {
+        "avgFee": 100000000,
+        "maxFee": 100000000,
+        "minFee": 100000000
+      }
+    }
+  ],
+  "constants": {
+    "activeDelegates": 51,
+    "epoch": "2020-04-29T23:02:28.540Z"
+  },
+  "vendorField": {
+    "maxLength": 255
+  },
+  "nethash": "577e03f7a9331eba7b3e04daae0518c79e047a25b017a7cdf3d7bc1337c08990",
+  "explorer": "http://199.192.30.215:4200",
+  "token": "BIN",
+  "subunit": "bintoshi",
+  "symbol": "⟐",
+  "fractionDigits": 8,
+  "version": 30,
+  "wif": 160,
+  "knownWallets": {
+    "DFuXvHSJbEME9FqNt66oyb8unnteP9s2cj": "Premine Wallet"
+  }
+}
