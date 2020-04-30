@@ -7,13 +7,8 @@
       v-if="senderLabel"
       :is-floating-label="true"
     >
-      <ListDividedItem
-        :label="$t('TRANSACTION.SENDER')"
-        item-value-class="w-full"
-      >
-        <span class="break-words">
-          {{ senderLabel }}
-        </span>
+      <ListDividedItem :label="$t('TRANSACTION.SENDER')">
+        {{ senderLabel }}
         <span
           v-if="senderLabel !== currentWallet.address"
           class="text-sm text-theme-page-text-light"

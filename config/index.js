@@ -9,12 +9,14 @@ exports.APP = {
 
 exports.NETWORKS = [
   require('./networks/mainnet.json'),
-  require('./networks/devnet.json')
+  require('./networks/devnet.json'),
+  require('./networks/testnet.json')
 ]
 
 exports.PEERS = {
   'ark.mainnet': require('./peers/mainnet.json'),
-  'bancoin.devnet': require('./peers/devnet.json')
+  'ark.devnet': require('./peers/devnet.json'),
+  'bancoin.devnet': require('./peers/testnet.json')
 }
 
 exports.ANNOUNCEMENTS = {
@@ -113,8 +115,6 @@ exports.MARKET = {
   }
 }
 
-// This section handles fetching Desktop-Wallet Plugins from the NPM registry.
-// It should remain "ARK" unless intentionally implementing a custom package.
 exports.PLUGINS = {
   adapters: ['npm'],
   pluginsUrl: 'https://raw.githubusercontent.com/ark-ecosystem-desktop-plugins/config/master/plugins.json',
@@ -125,18 +125,18 @@ exports.PLUGINS = {
     'utility',
     'other'
   ],
-  devPath: path.resolve(os.homedir(), '.ark-desktop/plugins-dev'),
+  devPath: path.resolve(os.homedir(), '.bancoin-desktop/plugins-dev'),
   maxKeywords: 5,
   keywords: [
-    '@arkecosystem',
+    '@bancoin',
     'desktop-wallet',
     'plugin'
   ],
-  officialScope: 'arkecosystem',
-  officialAuthor: 'ARK Ecosystem',
-  path: path.resolve(os.homedir(), '.ark-desktop/plugins'),
+  officialScope: 'BancoinLabs',
+  officialAuthor: 'BANCOIN',
+  path: path.resolve(os.homedir(), '.bancoin-desktop/plugins'),
   reportUrl: 'https://ark.io/contact',
-  sharePath: path.resolve(os.homedir(), '.ark-desktop/share'),
+  sharePath: path.resolve(os.homedir(), '.bancoin-desktop/share'),
   updateInterval: {
     value: 1,
     unit: 'day'
